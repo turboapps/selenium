@@ -1,0 +1,14 @@
+#
+# Builds a selenium grid node image (without the browser component)
+#
+var ver = 1
+var gridimage = "selenium/selenium-grid-plugin:" + ver
+from base, oracle/jre-core:8.25, selenium/selenium-server-standalone:3.6.0, gridimage
+
+cmd echo Building version %ver%
+env SELENIUM_CONTAINER_VER=ver
+
+meta namespace="selenium"
+meta name="selenium-grid-node"
+
+startup file ("C:\Selenium\launchWrapper.bat", "node")

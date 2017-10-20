@@ -1,0 +1,16 @@
+#
+# Builds the selenium grid image
+#
+var ver = 1
+var gridimage = "selenium/selenium-grid-plugin:" + ver
+from base, oracle/jre-core:8.25, selenium/selenium-server-standalone:3.6.0, gridimage
+
+workdir C:\Selenium
+
+cmd echo Building version %ver%
+env SELENIUM_CONTAINER_VER=ver
+
+meta namespace="selenium"
+meta name="selenium-grid"
+
+startup file ("C:\Selenium\launchWrapper.bat", "hub")

@@ -1,0 +1,11 @@
+meta namespace="selenium"
+meta name="selenium-grid-plugin"
+
+from base
+using oracle/jdk:8,sbt/sbt-nojre:0.13.8
+
+cmd sbt clean assembly
+cmd mkdir C:\Selenium
+
+cmd copy target\scala-2.10\spoonium-grid-plugin-assembly.jar C:\Selenium
+cmd copy launchWrapper.bat C:\Selenium

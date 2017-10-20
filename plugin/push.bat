@@ -1,0 +1,1 @@
+turbo push selenium/selenium-grid-plugin:%SELENIUM_CONTAINER_VER%

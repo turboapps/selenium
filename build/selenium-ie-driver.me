@@ -1,0 +1,18 @@
+#
+# Builds the selenium ie driver image
+#
+using wget,7-zip
+
+cmd mkdir C:\Selenium
+
+workdir C:\Selenium
+
+# driver binaries used by selenium to launch the browsers
+
+cmd wget http://selenium-release.storage.googleapis.com/2.48/IEDriverServer_Win32_2.48.0.zip --no-check-certificate
+cmd 7z x IEDriverServer_Win32_2.48.0.zip
+cmd del IEDriverServer_Win32_2.48.0.zip /Q
+
+meta namespace="selenium"
+meta name="selenium-ie-driver"
+meta tag="2.48"

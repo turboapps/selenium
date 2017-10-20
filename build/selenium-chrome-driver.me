@@ -1,0 +1,119 @@
+#
+# Builds the selenium chrome driver, including all versions in one image
+#
+using wget,7-zip
+
+cmd mkdir C:\Selenium
+cmd mkdir C:\Selenium\chromedriver
+
+cmd mkdir C:\Selenium\chromedriver\2.33
+workdir C:\Selenium\chromedriver\2.33
+cmd wget http://chromedriver.storage.googleapis.com/2.33/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.32
+workdir C:\Selenium\chromedriver\2.32
+cmd wget http://chromedriver.storage.googleapis.com/2.32/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.31
+workdir C:\Selenium\chromedriver\2.31
+cmd wget http://chromedriver.storage.googleapis.com/2.31/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.30
+workdir C:\Selenium\chromedriver\2.30
+cmd wget http://chromedriver.storage.googleapis.com/2.30/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.29
+workdir C:\Selenium\chromedriver\2.29
+cmd wget http://chromedriver.storage.googleapis.com/2.29/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.28
+workdir C:\Selenium\chromedriver\2.28
+cmd wget http://chromedriver.storage.googleapis.com/2.28/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.27
+workdir C:\Selenium\chromedriver\2.27
+cmd wget http://chromedriver.storage.googleapis.com/2.27/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.26
+workdir C:\Selenium\chromedriver\2.26
+cmd wget http://chromedriver.storage.googleapis.com/2.26/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.25
+workdir C:\Selenium\chromedriver\2.25
+cmd wget http://chromedriver.storage.googleapis.com/2.25/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.24
+workdir C:\Selenium\chromedriver\2.24
+cmd wget http://chromedriver.storage.googleapis.com/2.24/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.23
+workdir C:\Selenium\chromedriver\2.23
+cmd wget http://chromedriver.storage.googleapis.com/2.23/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.22
+workdir C:\Selenium\chromedriver\2.22
+cmd wget http://chromedriver.storage.googleapis.com/2.22/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.21
+workdir C:\Selenium\chromedriver\2.21
+cmd wget http://chromedriver.storage.googleapis.com/2.21/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.20
+workdir C:\Selenium\chromedriver\2.20
+cmd wget http://chromedriver.storage.googleapis.com/2.20/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.11
+workdir C:\Selenium\chromedriver\2.11
+cmd wget http://chromedriver.storage.googleapis.com/2.11/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.10
+workdir C:\Selenium\chromedriver\2.10
+cmd wget http://chromedriver.storage.googleapis.com/2.10/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.9
+workdir C:\Selenium\chromedriver\2.9
+cmd wget http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+
+cmd mkdir C:\Selenium\chromedriver\2.8
+workdir C:\Selenium\chromedriver\2.8
+cmd wget http://chromedriver.storage.googleapis.com/2.8/chromedriver_win32.zip --no-check-certificate -O chromedriver_win32.zip
+cmd 7z x chromedriver_win32.zip
+cmd del chromedriver_win32.zip /Q
+cmd dir .
+
+meta namespace="selenium"
+meta name="selenium-chrome-driver"

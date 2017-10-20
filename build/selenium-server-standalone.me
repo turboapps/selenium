@@ -1,0 +1,15 @@
+#
+# Builds the selenium server standalone image
+#
+using wget,7-zip
+
+cmd mkdir C:\Selenium
+
+workdir C:\Selenium
+
+# selenium jar
+cmd wget https://goo.gl/21wWg8 --no-check-certificate -O selenium-server-standalone.jar
+
+meta namespace="selenium"
+meta name="selenium-server-standalone"
+meta tag="3.6.0"

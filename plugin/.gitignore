@@ -1,0 +1,3 @@
+# Selenium dependencies for running direct setup (without the virtual apps)
+selenium-standalone.jar
+chromedriver
