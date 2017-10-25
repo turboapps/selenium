@@ -12,11 +12,11 @@ set SELENIUM_CONTAINER_VER=%mydate%.%mytime%
 REM pulling latest jre-core as a hack, remove after WEB-2981
 turbo pull oracle/jre-core:8.25
 
-cd ../spoonium-grid-plugin
+cd ../plugin
 call build.bat
 if %errorlevel% neq 0 exit /b %errorlevel%
 
-cd ../app-builds
+cd ../build
 call build.bat
 
 if %errorlevel% neq 0 exit /b %errorlevel%
