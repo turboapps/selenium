@@ -52,7 +52,7 @@ class NodeLauncher(caps: CapabilitiesWrapper, customBrowsers: CustomBrowsers) ex
 
     val imagesToLaunch = Seq("base", imageName, "oracle/jre-core:8.25") ++ seleniumDrivers ++ Seq(s"selenium/selenium-grid-node:$seleniumContainerVer")
 
-    val command = Seq("cmd.exe", "/C", "start", "/I", "/wait", quoted(windowTitle), "spoon.exe", "try", "--attach", imagesToLaunch.mkString(",")) ++ launchWrapperArgs
+    val command = Seq("cmd.exe", "/C", "start", "/I", "/wait", quoted(windowTitle), "turbo.exe", "try", "--attach", imagesToLaunch.mkString(",")) ++ launchWrapperArgs
 
     executeCommand(command, envVars)
   }

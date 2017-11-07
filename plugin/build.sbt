@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
    "org.springframework"        % "spring-test"             % "4.0.5.RELEASE",
    "javax.servlet"              % "javax.servlet-api"       % "3.0.1",
    "org.scalatest"              % "scalatest_2.10"          % "2.2.0-M1"                % "test",
-   "javassist"                  % "javassist"               % "3.12.1.GA",
+   "org.javassist"              % "javassist"               % "3.22.0-CR2",
    "net.java.dev.jna"           % "jna"                     % "3.4.0",
    "net.java.dev.jna"           % "platform"                % "3.4.0"
 )

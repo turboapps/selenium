@@ -17,7 +17,7 @@ class NodeLauncherTest extends FeatureSpec {
         "version" -> "11"
       ))
 
-      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Ie 11\"", "spoon.exe", "try", "--attach",
+      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Ie 11\"", "turbo.exe", "try", "--attach",
         s"base,selenium/ie-selenium:11,oracle/jre-core:8.25,selenium/selenium-ie-driver,selenium/selenium-grid-node:$seleniumGridVersion",
         "node", "ie", "11", currentPid)
 
@@ -30,7 +30,7 @@ class NodeLauncherTest extends FeatureSpec {
         "version" -> "40"
       ))
 
-      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Chrome 40\"", "spoon.exe", "try", "--attach",
+      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Chrome 40\"", "turbo.exe", "try", "--attach",
         s"base,google/chrome-base:40,oracle/jre-core:8.25,selenium/selenium-chrome-driver,selenium/selenium-grid-node:$seleniumGridVersion",
         "node", "chrome", "40", currentPid)
 
@@ -42,7 +42,7 @@ class NodeLauncherTest extends FeatureSpec {
         "browserName" -> "chrome"
       ))
 
-      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Chrome\"", "spoon.exe", "try", "--attach",
+      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Chrome\"", "turbo.exe", "try", "--attach",
         s"base,google/chrome-base,oracle/jre-core:8.25,selenium/selenium-chrome-driver,selenium/selenium-grid-node:$seleniumGridVersion",
         "node", "chrome", "", currentPid)
 
@@ -55,7 +55,7 @@ class NodeLauncherTest extends FeatureSpec {
         "version" -> "28"
       ))
 
-      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Firefox 28\"", "spoon.exe", "try", "--attach",
+      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Firefox 28\"", "turbo.exe", "try", "--attach",
         s"base,mozilla/firefox-base:28,oracle/jre-core:8.25,selenium/selenium-gecko-driver,selenium/selenium-grid-node:$seleniumGridVersion",
         "node", "firefox", "28", currentPid)
 
@@ -71,7 +71,7 @@ class NodeLauncherTest extends FeatureSpec {
         "spoon.image" -> "edi/custom-ie-10"
       ))
 
-      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Ie 10 edi/custom-ie-10\"", "spoon.exe", "try", "--attach",
+      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Ie 10 edi/custom-ie-10\"", "turbo.exe", "try", "--attach",
         s"base,edi/custom-ie-10,ie-selenium-shims:11,oracle/jre-core:8.25,selenium/selenium-ie-driver,selenium/selenium-grid-node:$seleniumGridVersion",
         "node", "ie", "10", currentPid)
 
@@ -85,7 +85,7 @@ class NodeLauncherTest extends FeatureSpec {
         "spoon.image" -> "edi/custom-ff-30"
       ))
 
-      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Firefox 30 edi/custom-ff-30\"", "spoon.exe", "try", "--attach",
+      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Firefox 30 edi/custom-ff-30\"", "turbo.exe", "try", "--attach",
         s"base,edi/custom-ff-30,oracle/jre-core:8.25,selenium/selenium-gecko-driver,selenium/selenium-grid-node:$seleniumGridVersion",
         "node", "firefox", "30", currentPid)
 
@@ -98,7 +98,7 @@ class NodeLauncherTest extends FeatureSpec {
         "version" -> "30"
       ), CustomBrowsers.apply("firefox30=edi/custom-ff-30"))
 
-      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Firefox 30 edi/custom-ff-30\"", "spoon.exe", "try", "--attach",
+      val expected = Seq("cmd.exe", "/C", "start", "/I", "/wait", "\"Selenium Node - Firefox 30 edi/custom-ff-30\"", "turbo.exe", "try", "--attach",
         s"base,edi/custom-ff-30,oracle/jre-core:8.25,selenium/selenium-gecko-driver,selenium/selenium-grid-node:$seleniumGridVersion",
         "node", "firefox", "30", currentPid)
 
